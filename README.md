@@ -1,14 +1,20 @@
 # SDL_circle
 Two function missing in SDL2, SDL_RenderDrawCircle and SDL_RenderDrawFillCircle.  
   
-Easy prototype  
+### Prototypes
+```c
 int SDL_RenderDrawCircle(SDL_Renderer *renderer, int x, int y, int radius);  
 int SDL_RenderDrawFillCircle(SDL_Renderer *renderer, int x, int y, int radius);  
-  
-Basically reimplementing this algorithm and optimised by calling SDL_RenderDrawPoints or SDL_RenderDrawLines instead of SDL_RenderDrawPoint and SDL_RenderDrawLine multiple times.  
-Feel free to use it as you want.
-  
+```
+### Overview
+Basically reimplementing this algorithm.  
 https://fr.wikipedia.org/wiki/Algorithme_de_trac%C3%A9_d%27arc_de_cercle_de_Bresenham  
+See below in Algorithm.  
+
+Its optimised by calling SDL_RenderDrawPoints or SDL_RenderDrawLines instead of SDL_RenderDrawPoint and SDL_RenderDrawLine multiple times.  
+Feel free to use it as you want.  
+ 
+### Algorithm
 ```
 procédure tracerCercle (entier rayon, entier x_centre, entier y_centre)
 	déclarer entier x, y, m ;
