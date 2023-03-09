@@ -1,6 +1,6 @@
 #include <SDL2/SDL.h>
 
-int SDL_RenderDrawFillCircle(SDL_Renderer *renderer, int x, int y, int radius) {
+int SDL_RenderFillCircle(SDL_Renderer *renderer, int x, int y, int radius) {
 	int x_center = x;
 	int y_center = y;
 	x = 0;
