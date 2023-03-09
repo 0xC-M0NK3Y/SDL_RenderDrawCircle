@@ -1,10 +1,10 @@
 # SDL_circle
-Two function missing in SDL2, SDL_RenderDrawCircle and SDL_RenderDrawFillCircle.  
+Two function missing in SDL2, SDL_RenderDrawCircle and SDL_RenderFillCircle.  
   
 ### Prototypes
 ```c
 int SDL_RenderDrawCircle(SDL_Renderer *renderer, int x, int y, int radius);  
-int SDL_RenderDrawFillCircle(SDL_Renderer *renderer, int x, int y, int radius);  
+int SDL_RenderFillCircle(SDL_Renderer *renderer, int x, int y, int radius);  
 ```
 ### Overview
 Basically reimplementing this algorithm.  
